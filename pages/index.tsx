@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Home: NextPage = () => {
     return (
-        <div className="flex flex-col h-screen justify-between">
+        <div className="flex flex-col h-screen">
             <Head>
                 <title>Create Next App</title>
                 <meta
@@ -13,9 +13,9 @@ const Home: NextPage = () => {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <header className="h-10 bg-red-500">Header</header>
-            <main className="mb-auto h-10 bg-green-500">Content</main>
-            <footer className="h-10 bg-blue-500">Footer</footer>
+            <header className="p-4 bg-red-500">Header</header>
+            <main className="flex-grow bg-green-500">Content</main>
+            <footer className="p-4 bg-blue-500">Footer</footer>
         </div>
     );
 };
